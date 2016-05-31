@@ -1,0 +1,9 @@
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\bin\Debug\SmashCharacterRandomizer.exe
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\bin\Debug\SmashCharacterRandomizer.pdb
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\obj\Debug\SmashCharacterRandomizer.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\obj\Debug\SmashCharacterRandomizer.exe
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\obj\Debug\SmashCharacterRandomizer.pdb
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\bin\Debug\SmashCharacterRandomizer.exe.manifest
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\bin\Debug\SmashCharacterRandomizer.application
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\obj\Debug\SmashCharacterRandomizer.exe.manifest
+C:\Users\Paul\Documents\Visual Studio 2013\Projects\SmashCharacterRandomizer\SmashCharacterRandomizer\obj\Debug\SmashCharacterRandomizer.application
