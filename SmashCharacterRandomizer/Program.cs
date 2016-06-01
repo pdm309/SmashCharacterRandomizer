@@ -11,9 +11,15 @@ namespace SmashCharacterRandomizer
         {
             bool satisfied = false;
             Generation gen = generateCharacters();
+            if (gen == null)
+            {
+                //Console.WriteLine("\n \n \n Press Enter to close");
+                Console.ReadLine();
+                return;
+            }
             while (!satisfied)
             {
-                
+
                 Console.WriteLine("\n \nWould you like to generate a new batch of characters for these players?");
                 Console.WriteLine("\n \nEnter Y or N");
                 string response = Console.ReadLine();
@@ -24,10 +30,10 @@ namespace SmashCharacterRandomizer
                 else
                 {
                     satisfied = true;
-                    Console.WriteLine("\n \n \n Press Enter to close");
+                    Console.WriteLine("\n \nPress Enter to close");
                     Console.ReadLine();
                 }
-                
+
             }
         }
 
@@ -74,11 +80,16 @@ namespace SmashCharacterRandomizer
             Console.WriteLine("Please pick a game between smash64, melee, brawl, project_m, and smash4: \n>");
             Console.WriteLine("Enter choice: ");
             string choice = Console.ReadLine();
+
             List<string> characters = new List<string>();
 
             try
             {
                 characters = readFile(choice);
+                if (characters == null)
+                {
+                    return null;
+                }
             }
             catch (Exception ex)
             {
@@ -116,7 +127,17 @@ namespace SmashCharacterRandomizer
 
             Console.WriteLine("Please write the number of characters each player will get: \n>");
             Console.WriteLine("Enter number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
+            int number;
+            try
+            {
+                number = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("\n \nNot a valid number");
+                Console.WriteLine("\n \nPress Enter to close");
+                return null;
+            }
             Generation gen = new Generation(choice, names, number, characters);
             Random rand = new Random();
             //Console.WriteLine(choice + "\n");
@@ -148,7 +169,7 @@ namespace SmashCharacterRandomizer
                 //Console.WriteLine(names[i] + "\n");
             }
             return gen;
-            
+
         }
 
         static List<string> readFile(string choice)
@@ -233,7 +254,7 @@ namespace SmashCharacterRandomizer
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
-                    Console.WriteLine("\n \n \nPress Enter to close");
+                    Console.WriteLine("\n \nPress Enter to close");
                     return null;
             }
             return characters;
